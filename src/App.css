@@ -1,0 +1,38 @@
+.gallery{
+  position: relative;
+}
+
+
+.tags{
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  justify-content: center;
+  visibility: hidden;
+  transform: scaleY(0);
+  transition: transform 200ms ease-in;
+  transform-origin: bottom;
+}
+
+.gallery:hover .tags{
+  visibility: visible;
+  transform: scaleY(1);
+ 
+}
+
+
+.hero-bg{
+  min-height: 500px;
+}
+
+.gallery img{
+  height: 200px;
+}
+
+.tag-list:hover{
+  background-color: rgba(222, 214, 214, 0.5);
+  color: #fff;
+}
